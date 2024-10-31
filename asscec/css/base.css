@@ -1,0 +1,34 @@
+:root {
+    --backround-color: #333;
+    --white-color: #fff;
+    --black-color: #000;
+    --primery-color: #18181d;
+    --text-color: #47656c;
+    --primary-color: #ec1f55;
+    --blu-color: #5773ff;
+}
+
+.app {
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--black-color);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* 62.5% tức là 10px tứa là 1rem*/
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem; 
+    font-family: "Roboto", sans-serif;  
+    box-sizing: border-box;
+  
+    user-select: none
+}
+

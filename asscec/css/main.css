@@ -1,0 +1,639 @@
+.category {
+    height: 100%;
+    background-color: var(--primery-color);
+    color: var(--white-color);
+    font-size: 1.6rem;
+    height: 100vh;
+}
+
+.category-link {
+  color: var(--back-color);
+  text-decoration: none;
+
+}
+.category__logo {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category__logo-icon {
+    font-size: 30px;
+}
+
+.category__logo-name {
+    margin-top: 1rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.category__lybrary {
+    margin-top: 50px;
+}
+
+.category__lybrary-heading,
+.category__playlist-name {
+    text-align: center;
+
+    margin: 0;
+    color: #535151;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.category__lybrary-list,
+.category__playlist-list,
+.category__discover-list {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+.category__lybrary-item:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.category__lybrary-item-link,
+.category__playlist-item-link,
+.category__discover-item-link {
+    text-decoration: none;
+    color: var(--white-color);
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.category__lybrary-item-link:hover,
+.category__playlist-item-link:hover,
+.category__discover-item-link:hover {
+    color: #0dafd7;
+}
+
+.category__lybrary-item-icon {
+    
+}
+
+.category__lybrary-item-name,
+.category__playlist-item-name,
+.caterory__discover-name {
+    padding: 17px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__search-input {
+    margin-left: 100px;
+    width: 510px;
+    height: 10px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: var(--primery-color);
+    border: 0;
+    outline: none;
+    color: var(--white-color);
+}
+
+.header__search-icon {
+    color: #0dafd7;
+    margin-left: -30px;
+    font-size: 1.8rem;
+    margin-top: 4px;
+}
+
+
+.header__login {
+    margin-top: 10px;
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+}
+.header__login-link {
+    text-decoration: none;
+
+}
+
+.header__login-icon {
+    color: var(--white-color);
+    margin: 0 15px;
+    font-size: 1.8rem;
+
+}
+
+.header__login-user {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__login-user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(21, 121, 175, 1);
+    border-image: initial;
+}
+
+.header__login-user-name {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+
+/* phần phát nhạc */
+.player {
+  margin-top: 70px;
+}
+
+.player .icon-play {
+  display: inline-block;
+}
+
+.player .icon-pause {
+  display: none;
+}
+
+.player.playing .icon-pause {
+  display: inline-block;
+}
+
+.player.playing .icon-play {
+  display: none;
+}
+
+
+
+
+
+.dashboard {
+  background-color: var(--primery-color);
+  top: 0;
+  max-width: 94%;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-left: 25px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h4 {
+  color: var(--primary-color);
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.info-song .body h2 {
+  margin: 0 0 0 20px;
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 5rem;
+
+}
+
+/* CD */
+.cd {
+  display: flex;
+  margin: auto;
+  width: 200px;
+}
+
+.cd-thumb {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* CONTROL */
+.operation {
+  background-color: var(--blu-color);
+  padding: 20px 20px 60px;
+  border-radius: 20px;
+}
+
+.control {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 0 8px 0;
+  cursor: pointer;
+}
+
+
+.control .btn {
+  color: var(--white-color);
+  padding: 18px;
+  font-size: 18px;
+}
+
+.control .btn:hover {
+  color: var(--primary-color);
+}
+
+.control .btn.active {
+  color: var(--primary-color);
+}
+
+.control .btn-toggle-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--blu-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-color);
+}
+
+.progress {
+  width: 70%;
+  /* -webkit-appearance: none; */
+  height: 6px;
+  border-radius: 4px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition:  opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-bottom: 70px;
+  margin-left: 63px;
+}
+
+
+
+
+
+.progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background-color: #ca284b;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* PLAYLIST */
+
+.info-song {
+  display: flex;
+  width: 80%;
+  
+}
+
+.cd-img {
+  width: 30%;
+  padding-top: 30%;
+  background-size: cover;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+
+/* .topic {
+  margin-right: 20px;
+  padding-top: 20px;
+  width: 42%;
+  float: right;
+  margin-top: -210px;
+  height: 100px;
+  background-color: var(--primery-color);
+  border-radius: 5px;
+}
+
+.topic-list {
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.topic-item {
+  margin-left: 20px;
+}
+
+
+
+.topic-name-rap,
+.topic-name-remix,
+.topic-name-chill {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  width: 30%;
+  padding-top: 16px;
+  height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  color: var(--white-color);
+}
+
+.topic-name-rap {
+  background-color: #476a8a;
+}
+
+.topic-name-remix {
+  background-color: #a24c34;;
+}
+
+.topic-name-chill {
+  background-color: #a67894;
+}
+ */
+
+.container{
+  margin-top: 12px;
+  margin-left: 20px;
+  width: 96%;
+  height: 300px;
+}
+
+.playlist-top-song-heading{
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  background-color: var(--primery-color);
+  margin: 0;
+  width: 96%;
+  padding: 20px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 30px;
+  color: #9abbc4;
+  
+}
+
+.playlist {
+  width: 96%;
+  background-color: var(--primery-color);
+  height: 280px;
+  padding: 20px 20px 2px 20px ;
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.playlist::-webkit-scrollbar {
+  width: 5px; /* Độ rộng của thanh cuộn */
+}
+  /* Màu nền của thanh cuộn */
+.playlist::-webkit-scrollbar-track {
+    background-color: #2F353B;
+    border-radius: 30px;
+  }
+  
+  /* Màu của phần cuộn thanh */
+.playlist::-webkit-scrollbar-thumb {
+    background-color: #8B8D8F;
+    border-radius: 5px; /* Độ cong của góc */
+  }
+  
+  /* Hover effect */
+.playlist::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+.song {
+  display: flex;
+  align-items: center;
+  background-color: var(--primery-color);
+  padding: 0 16px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.song.active {
+  background-color: #47656c;
+}
+
+.song:active {
+  opacity: 0.8;
+}
+
+.song.active .option,
+.song.active .author,
+.song.active .title {
+  color: #fff;
+}
+
+.song .thumb {
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  margin: 0 8px;
+  border-radius: 4px;
+}
+
+.song .body {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.song .title {
+  font-size: 1.6rem;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.song .author {
+  font-size: 12px;
+  color: #999;
+  margin: 4px 0 0 0;
+}
+
+.song .option {
+  padding: 16px 8px;
+  color: #999;
+  font-size: 18px;
+}
+
+
+
+/* reponsive */
+/* taplet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .play-music {
+      width: 32%;
+    }
+
+    /* danh sách nhạc */
+    .list-music{
+      width: 68%;
+    }
+
+    .playlist-top-song-heading {
+      width: 500px;
+    }
+
+    .playlist {
+      width: 500px;
+    }
+
+    .header__search-input {
+      width: 380px;
+    } 
+
+    /* phần cái đĩa */
+    .dashboard {
+      max-width: 90%;
+      padding-top: 10px;
+      margin-left: 20px;
+      margin-top: 74px;
+    }
+    
+
+    header h4 {
+      font-size: 1.2rem;
+    }
+
+    header h2 {
+      font-size: 1.4rem;
+    }
+
+    .cd {
+      width: 160px;
+    }
+
+    .progress {
+      width: 54%;
+      margin-left: 86px;
+    }
+
+    .operation {
+      padding: 20px 20px 40px;
+    }
+
+    .control .btn {
+      font-size: 1.6rem;
+    }
+
+    .container {
+      width: 90%;
+      height: 300px;
+    }
+}
+
+
+/* only mobile */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .header__search-input {
+    width: 66%;
+        margin-left: 91px;
+  }
+
+  .header__login {
+    margin-right: 4px;
+  }
+
+  .play-music {
+    width: 100%;
+  }
+
+  .list-music {
+    width: 100%;
+  }
+
+  .playlist-top-song-heading {
+    display: none;
+  }
+
+  .playlist {
+    padding: 0 20px 0 0;
+  }
+
+  .container {
+    /* margin: 0; */
+    max-width: 100%;
+  }
+
+  .dashboard {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+
+/* > PC low resolution / pc phân giải thấp */
+@media (min-width: 1024px) and (max-width: 1239px) { 
+
+  
+  .category {
+    font-size: 1rem;
+  }
+
+
+
+  
+.category__lybrary-item-name,
+.category__playlist-item-name,
+.caterory__discover-name {
+  font-size: 1rem;
+}
+  
+.category__lybrary-item-link,
+.category__playlist-item-link,
+.category__discover-item-link {
+  margin-left: 20px;
+}
+
+  .cd-img {
+    margin-bottom: 20px;
+  }
+
+  .progress {
+    margin-left: 50px;
+  }
+  
+  .dashboard {
+    margin-left: 0;
+    max-width: 100%;
+
+  }
+
+  .operation {
+    padding-bottom: 40px;
+  }
+
+} 
