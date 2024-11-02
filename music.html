@@ -24,10 +24,15 @@
              <div class="row app_content">
                 <!-- làm category -->
 
-                <div class="col p-2 t-0 m-0
-                ">
+                <div class="col p-2 t-4 m-12">
+                    <input type="checkbox" hidden name="" class="hide-show-category" id="open-cate-m-t">
+                    <label for="open-cate-m-t" class="overplay">
+                    </label>
                     <div class="category">
 
+                        <label for="open-cate-m-t" class="category__exit">
+                            <i class="category__exit-icon fa-solid fa-xmark"></i>
+                        </label>
                         <div class="category__logo">
                             <a href="./music.html" class="category-link">
                                 <i class="category__logo-icon fa-solid fa-headphones"></i>
@@ -118,9 +123,21 @@
 
                 <!-- phần container -->
                  <div class="col p-10 t-12 m-12">
+                    
                     <!-- phần header -->
                     <div class="header ">
+                        
+                        <!-- khi bấm vào đây thì hiện -->
+
+                        <label for="open-cate-m-t" class="header__menu">
+                            <i class="header__menu-icon fa-solid fa-bars"></i>
+                        </label>
+
+
+                        
+
                         <div class="header__search">
+                            
                             <input type="text" class="header__search-input" placeholder="Type here to serch">
                             <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
                             
@@ -135,15 +152,13 @@
                             </a>
                             <div class="header__login-user">
                                 <img src="https://i.pinimg.com/736x/f6/82/b3/f682b3d6fb501e560841e48039b1e2df.jpg" alt="" class="header__login-user-img">
-                                <span class="header__login-user-name">Minh Tri</span>
+                                <span class="header__login-user-name hide-on-mobile">Minh Tri</span>
                             </div>
                         </div>
 
-
-
                     </div>
-
-
+                    
+                  
                     
                         <div class="player">
                                 <!-- Playlist -->

@@ -32,3 +32,14 @@ html{
     user-select: none
 }
 
+@keyframes faceIn {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+

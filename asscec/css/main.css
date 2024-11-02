@@ -4,6 +4,20 @@
     color: var(--white-color);
     font-size: 1.6rem;
     height: 100vh;
+
+}
+
+.category__exit {
+  display: none;
+}
+.category__exit-icon {
+  font-size: 3rem;
+  float: right;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 30px;
+      height: 30px;
 }
 
 .category-link {
@@ -487,11 +501,59 @@ header h4 {
 
 
 
+
 /* reponsive */
 /* taplet */
 @media (min-width: 740px) and (max-width: 1023px) {
+  .category {
+    width: 70%;
+    max-width: 30%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+}
+
+/* làm cho cái category hiện ra */
+.hide-show-category:checked ~ .overplay {
+  display: block;
+}
+
+.hide-show-category:checked ~ .category {
+  transform: translateX(0);
+
+}
+
+
+    .category__exit {
+       display: block;
+    }
+
+    .header__menu {
+    }
+    .header__menu-icon {
+      font-size: 2.4rem;
+      color: var(--white-color);
+      margin-left: 26px;
+      text-align: center;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+    }
+    .header__search-input {
+      margin-left: 150px;
+    } 
     .play-music {
       width: 32%;
+    }
+
+    .info-song {
+      margin-top: 66px;
+
     }
 
     /* danh sách nhạc */
@@ -500,11 +562,11 @@ header h4 {
     }
 
     .playlist-top-song-heading {
-      width: 500px;
+      width: 100%;
     }
 
     .playlist {
-      width: 500px;
+      width: 100%;
     }
 
     .header__search-input {
@@ -551,19 +613,74 @@ header h4 {
     }
 }
 
+.overplay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  animation: faceIn linear 0.3s;
+}
+
+
 
 /* only mobile */
 @media (max-width: 768px) {
+  .category {
+    width: 70%;
+    max-width: 50%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform linear 0.3s;
+}
+
+/* làm cho cái category hiện ra */
+.hide-show-category:checked ~ .overplay {
+  display: block;
+}
+
+.hide-show-category:checked ~ .category {
+  transform: translateX(0);
+
+}
+
+.category__exit {
+     display: block;
+  }
+
   .hide-on-mobile {
     display: none;
   }
 
+  .header__menu-icon {
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+  }
+
   .header__search-input {
-    width: 66%;
-        margin-left: 91px;
+    width: 76%;
+    margin-left: 38px;
   }
 
   .header__login {
+    margin-right: 4px;
+  }
+
+  .header__login-user {
+    justify-content: center;
+    margin-bottom: 10px;
     margin-right: 4px;
   }
 

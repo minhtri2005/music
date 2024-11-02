@@ -42,6 +42,7 @@ const turn = $(".cd-img");
 const playlist = $(".playlist");
 
 
+
 const app = {
     currenIndex: 0,
     isPlaying: false,
