@@ -184,18 +184,18 @@ const app = {
         //xử lí phóng to thu nhỏ cd
         let lastCall = 0;
         const throttleDelay = 100; // 100ms
-        document.onscroll = function() {
-            const now = Date.now();
-            if (now - lastCall < throttleDelay) {
-                return; // Nếu thời gian giữa các lần gọi không đủ, thì thoát
-            }
-            lastCall = now;
-            //vuốt lên xuống thanh scroll nó có số nhất định
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            const newCdwidth = cdwidth - scrollTop;
-            cd.style.width = newCdwidth > 0 ? newCdwidth + "px" : 0;
-            cd.style.opacity = newCdwidth / cdwidth
-        }
+        // document.onscroll = function() {
+        //     const now = Date.now();
+        //     if (now - lastCall < throttleDelay) {
+        //         return; // Nếu thời gian giữa các lần gọi không đủ, thì thoát
+        //     }
+        //     lastCall = now;
+        //     //vuốt lên xuống thanh scroll nó có số nhất định
+        //     const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        //     const newCdwidth = cdwidth - scrollTop;
+        //     cd.style.width = newCdwidth > 0 ? newCdwidth + "px" : 0;
+        //     cd.style.opacity = newCdwidth / cdwidth
+        // }
 
         playBtn.onclick = function() {
             if (_this.isPlaying) {
